@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>QS Frontend Developer - Тестовое задание</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+
+  <link rel="stylesheet" href="/src/scss/base-components.scss"/>
+  <link rel="stylesheet" href="/src/scss/default.scss"/>
+  <link rel="stylesheet" href="/src/scss/fonts.scss"/>
+  <link rel="stylesheet" href="/src/scss/main.scss"/>
+  <link rel="stylesheet" href="/src/scss/reset.scss"/>
+  <link rel="stylesheet" href="/src/scss/svb-panel.scss"/>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+<div class="app">
+  <header id="header" class="main-header">
+    <div class="header-top">
+      <div class="logo-block">
+        <img src="public/logo-blue.svg" alt="logo" width="90"/>
+      </div>
+      <div class="user-company">
+        <select class="user-company__switcher">
+          <option value="1">Название организации</option>
+        </select>
+      </div>
+      <div class="user-block">
+        <div class="logout-block">
+          <button type="submit" class="logout-button">
+            <img src="src/images/logout.svg" alt="logout-icon">
+            Выход
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="svb-panel">
+      <div class="svb-panel__body">
+        <div class="svb-panel__main">
+          <div class="svb-panel__sidebar">
+            <div class="page-sidebar">
+              <div class="main-menu">
+                <ul class="main-menu__list">
+                  <li class="main-menu__item">
+                    <a href="#">
+                      <span class="icon">
+                        <img src="src/images/document.svg" alt="">
+                      </span>
+                      Документы
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="svb-panel__content">
+
+            <div class="svb-panel__table-toolbar">
+              <div class="svb-toolbar">
+                <button class="svb-button">Создать</button>
+                <button class="svb-button svb-button--red">Удалить</button>
+              </div>
+            </div>
+
+            <div id="table-wrapper" class="svb-panel__table-wrapper">
+              <!-- Воот тут ты будешь шкодить -->
+            </div>
+
+            <div class="svb-panel__table-pagination">
+              <div class="svb-toolbar">
+                <button class="svb-button">1</button>
+                <button class="svb-button svb-button--gray">2</button>
+                <button class="svb-button svb-button--gray">3</button>
+                <button class="svb-button svb-button--gray">4</button>
+                <button class="svb-button svb-button--gray">5</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="module" src="/main.js"></script>
+</body>
+</html>
