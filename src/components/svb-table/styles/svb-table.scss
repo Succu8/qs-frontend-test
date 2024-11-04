@@ -1,7 +1,5 @@
 @use './vars.scss' as vars;
 
-/** Это пример */
-
 #table-wrapper {
   width: 100%;
   max-height: 100%;
@@ -44,6 +42,18 @@ table thead {
   background-color: vars.$main-color;
 }
 
+table tfoot {
+  position: sticky;
+  bottom: .5px;
+  z-index: 2;
+  color: vars.$main-white;
+  background-color: vars.$main-color;
+}
+
+table tfoot th {
+  padding: 12px;
+}
+
 table th,
 table td {
   padding: 8px 12px;
@@ -59,6 +69,10 @@ table tbody tr:nth-child(even) {
 
 table tbody tr:hover {
   background-color: #f1f1f1;
+}
+
+.active-tr {
+  background-color: red;
 }
 
 table th {
