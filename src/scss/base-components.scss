@@ -14,9 +14,8 @@
   color: #fff;
   border-radius: 2px;
   cursor: pointer;
-  transition:
-    0.16s background-color,
-    0.16s border-color;
+  transition: 0.16s background-color,
+  0.16s border-color;
 }
 
 .svb-button:hover {
@@ -65,21 +64,23 @@ input {
   -moz-appearance: none;
   appearance: none;
   border-radius: 2px;
-  transition:
-    border-color 0.18s ease-in-out,
-    box-shadow 0.18s ease-in-out;
+  transition: border-color 0.18s ease-in-out,
+  box-shadow 0.18s ease-in-out;
 }
+
 input[type='checkbox'] {
   display: inline-block;
   width: auto !important;
   padding: 8px;
   height: auto !important;
 }
+
 input[type='checkbox']:checked {
   background-color: #036958;
   border-color: #036958;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
 }
+
 input:focus,
 input:active {
   border-color: #86b7fe;
@@ -98,9 +99,8 @@ select {
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 4px;
-  transition:
-    border-color 0.18s ease-in-out,
-    box-shadow 0.18s ease-in-out;
+  transition: border-color 0.18s ease-in-out,
+  box-shadow 0.18s ease-in-out;
 }
 
 select:focus,
@@ -118,6 +118,6 @@ select:focus,
 }
 
 .svb-toolbar {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
